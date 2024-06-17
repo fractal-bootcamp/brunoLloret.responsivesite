@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import './App.css';
 import NavBarButtons from "./components/NavBarButtons"
 import Header from "./components/Header"
 import MoreAboutMe from './components/MoreAbout'
-import Mobile from './components/MobileComponent';
-import Desktop from './components/DesktopComponent';
 
 
 
