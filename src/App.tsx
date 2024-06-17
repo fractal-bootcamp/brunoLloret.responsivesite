@@ -1,5 +1,8 @@
 import { useState } from 'react'
+import NavBarButtons from "./components/NavBarButtons"
+import NavBarProjects from "./components/NavbarProjects"
 import Header from "./components/Header"
+import MoreAboutMe from './components/MoreAbout'
 
 
 function App() {
@@ -8,7 +11,12 @@ function App() {
   return (
     <>
       <Header />
-      Hi!
+
+      <MoreAboutMe />
+
+      <NavBarButtons />
+
+      <NavBarProjects />
 
     </>
   )
