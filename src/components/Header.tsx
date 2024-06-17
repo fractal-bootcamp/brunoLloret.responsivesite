@@ -9,16 +9,17 @@ export default function Header() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <nav>
                 <div>
-                    <div className=''>
-                        <h1 className="text-xl font-bold underline" > Test Tailwind</h1>
-                        <h1 style={{ color: "black", backgroundColor: "bisque" }}>Bruno's site</h1>
+                    <div className='m-10'>
+                        <h2 className="color caret-black bg-white font-mono size-full text-center text-lg" >How much wood would a woodchuck chuck</h2>
                     </div>
-                    <img className="w-16 md:w-32 lg:w-48" src={imageToAdd} alt='page of Nancy' />
+
+                    <img className="m-auto flex w-16 md:w-32 lg:w-48" src={imageToAdd} alt='page of Nancy' />
+
                 </div>
             </nav>
             <div className=''>
-                <p>
-                    I am Bruno Lloret — a writer, researcher, teacher, and into CS stuff.
+                <p className="m-10 font-mono size-full text-xs" >
+                    I am Bruno — a writer, researcher, teacher, and into CS stuff.
                 </p>
                 <ul>
                     <div className=''>
