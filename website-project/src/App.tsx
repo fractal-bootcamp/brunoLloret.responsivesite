@@ -1,7 +1,11 @@
 import { useState } from 'react'
+import './App.css';
 import NavBarButtons from "./components/NavBarButtons"
 import Header from "./components/Header"
 import MoreAboutMe from './components/MoreAbout'
+import Mobile from './components/MobileComponent';
+import Desktop from './components/DesktopComponent';
+
 
 
 function App() {
@@ -9,7 +13,6 @@ function App() {
 
   return (
     <>
-
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <title>Landing page</title>
@@ -22,17 +25,22 @@ function App() {
                 <Header />
                 <h2 className="flex-center font-mono">Ongoing projects</h2>
 
-                <div>
+                <div className="">
                   <NavBarButtons />
                 </div>
                 <br></br>
 
                 <MoreAboutMe />
+                <br></br>
               </div >
             </div>
           </div>
         </div>
+        <div>
+        </div>
       </body>
+      <div>
+      </div>
     </>
   )
 }
