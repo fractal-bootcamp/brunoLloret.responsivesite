@@ -6,17 +6,22 @@ import MoreAboutMe from './components/MoreAbout'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
       <Header />
 
-      <MoreAboutMe />
+      <div className="flex flex-col items-center pb-10" >
+        <h2 className="flex-center font-mono">Ongoing projects</h2>
 
-      <NavBarButtons />
+        <NavBarButtons />
 
-      <NavBarProjects />
+        <br></br>
+
+        <MoreAboutMe />
+      </div >
+
 
     </>
   )
