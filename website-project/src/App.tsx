@@ -20,9 +20,7 @@ function App() {
                 <Header />
                 <h2 className="flex-center font-mono pb-8">Ongoing projects</h2>
 
-                <div className="">
-                  <NavBarButtons />
-                </div>
+                <NavBarButtons />
                 <br></br>
 
                 <MoreAboutMe />
