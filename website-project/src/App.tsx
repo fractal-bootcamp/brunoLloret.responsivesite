@@ -2,6 +2,7 @@ import './App.css';
 import NavBarButtons from "./components/NavBarButtons"
 import Header from "./components/Header"
 import MoreAboutMe from './components/MoreAbout'
+import { projectsData } from './data/projectsData';
 
 function App() {
 
