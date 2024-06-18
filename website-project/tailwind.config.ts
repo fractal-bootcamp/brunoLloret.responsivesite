@@ -5,7 +5,27 @@ import type { Config } from 'tailwindcss'
 module.exports = {
   content: ["./src/**/*.{html,js,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+        size: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+        colorChange: {
+          '0%, 50%, 100%': { color: 'white' },
+          '25%, 75%': { color: 'black' },
+        },
+      },
+      animation: {
+        blink: 'blink 1s ease-in-out infinite',
+        size: 'size 1s ease-in-out infinite',
+        colorChange: 'colorChange 1s steps(1, end) infinite',
+      },
+    },
   },
   plugins: [require('daisyui'),
   ],
