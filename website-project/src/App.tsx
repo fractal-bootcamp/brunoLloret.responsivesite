@@ -1,12 +1,7 @@
-import { useState } from 'react'
 import './App.css';
 import NavBarButtons from "./components/NavBarButtons"
 import Header from "./components/Header"
 import MoreAboutMe from './components/MoreAbout'
-import Mobile from './components/MobileComponent';
-import Desktop from './components/DesktopComponent';
-
-
 
 function App() {
 
@@ -23,7 +18,7 @@ function App() {
             <div className="">
               <div className="flex flex-col items-center pb-10" >
                 <Header />
-                <h2 className="flex-center font-mono">Ongoing projects</h2>
+                <h2 className="flex-center font-mono pb-8">Ongoing projects</h2>
 
                 <div className="">
                   <NavBarButtons />
@@ -36,11 +31,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
-        </div>
       </body>
-      <div>
-      </div>
+
     </>
   )
 }
